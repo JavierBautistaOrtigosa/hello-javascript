@@ -34,3 +34,11 @@ console.log(5 * 2)
 console.log(5 / 2)
 console.log(5 % 2)
 console.log(5 ** 2)
+
+
+
+// Notes:
+// Kebab case
+// console es un objeto que a su vez es una capacidad que tiene el lenguaje para interactuar con la terminal.
+// log es una operacion/funcion.
+// JavaScript a dia de hoy no necesita ;

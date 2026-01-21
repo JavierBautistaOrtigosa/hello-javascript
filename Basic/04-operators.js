@@ -55,7 +55,7 @@ console.log(1 == false)
 console.log(2 == false)
 console.log(0 == "")
 console.log(0 == " ")
-console.log(0 == '')
+console.log(0 == "")
 console.log(0 == "Hola")
 console.log(0 === "")
 console.log(undefined == null)
@@ -95,7 +95,7 @@ console.log(5 < 10 || 15 < 20)
 console.log(5 < 10 || 15 > 20)
 console.log(5 > 10 || 15 > 20 || 30 > 40)
 
-console.log(5 > 10 && 15 > 20 || 30 < 40)
+console.log((5 > 10 && 15 > 20) || 30 < 40)
 
 // not (!)
 console.log(!true)
@@ -107,3 +107,11 @@ console.log(!(5 > 10 || 15 > 20))
 
 const isRaining = false
 isRaining ? console.log("Está lloviendo") : console.log("No está lloviendo")
+
+/*
+Notes:
+Si tenemos tipos de datos, los operadores se utilizan para relacionar y ejecutar operaciones con los datos.
+Los operadores se pueden clasificar en varias categorias en funcion de sus funcionalidades. 
+
+
+*/
