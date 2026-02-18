@@ -6,9 +6,9 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=15747
 let myArray = [1, 2, 3, 4]
 
 let person = {
-    name: "Brais",
-    age: 37,
-    alias: "MoureDev"
+      name: 'Brais',
+      age: 37,
+      alias: 'MoureDev'
 }
 
 let myValue = myArray[1]
@@ -28,7 +28,7 @@ console.log(myValue2)
 console.log(myValue3)
 console.log(myValue4)
 
-// Sintaxis arrays con valores predeterminados
+// // Sintaxis arrays con valores predeterminados
 
 let [myValue5 = 0, myValue6 = 0, myValue7 = 0, myValue8 = 0, myValue9 = 0] = myArray
 console.log(myValue5)
@@ -52,10 +52,10 @@ console.log(alias)
 
 // Sintaxis objects con valores predeterminados
 
-let { name2, age2, alias2, email = "email@email.com" } = person
+let { name2, age2, alias2, email = 'email@email.com' } = person
 console.log(name2) // No existe
-console.log(age2)  // No existe
-console.log(alias2)  // No existe
+console.log(age2) // No existe
+console.log(alias2) // No existe
 console.log(email)
 
 // Sintaxis objects con nuevos nombres de variables
@@ -68,22 +68,25 @@ console.log(alias3)
 // Objects anidados
 
 let person3 = {
-    name: "Brais",
-    age: 37,
-    alias: "MoureDev",
-    walk: function () {
-        console.log("La persona camina.")
-    },
-    job: {
-        name: "Programador",
-        exp: 15,
-        work: function () {
-            console.log(`La persona de ${this.age} años de experiencia trabaja.`)
-        }
-    }
+      name: 'Brais',
+      age: 37,
+      alias: 'MoureDev',
+      walk: function () {
+            console.log('La persona camina.')
+      },
+      job: {
+            name: 'Programador',
+            exp: 15,
+            work: function () {
+                  console.log(`La persona de ${this.age} años de experiencia trabaja.`)
+            }
+      }
 }
 
-let { name: name4, job: { name: jobName } } = person3
+let {
+      name: name4,
+      job: { name: jobName }
+} = person3
 
 console.log(name4)
 console.log(jobName)
@@ -110,7 +113,7 @@ console.log(myArray4)
 
 // Sintaxis objects
 
-let person4 = { ...person, email: "braismoure@mouredev.com" }
+let person4 = { ...person, email: 'braismoure@mouredev.com' }
 
 console.log(person4)
 

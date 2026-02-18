@@ -46,3 +46,21 @@ console.log(message)
 // Interpolación de valores
 let email = "braismoure@mouredev.com"
 console.log(`Hola, ${myName}! Tu email es ${email}.`)
+
+/*
+Notas:
+
+- Concatenacion de cadenas de texto via el operador
+
+- typeof es un operador
+
+- Se utiliza el punto para acceder a distintos metodos...
+- ... en funcion del metodo que invoque voy a obtener diferentes resultados...
+
+- Puedo acceder a caracteres mediante los corchetes y un numero para el la posicion del indice de la cadena de texto.
+
+- En programacion siempre se empieza contando desde cero dentro de listas..
+
+- Template literals nos dejan interpolar variables o para crear strings de varias lineas.
+
+*/

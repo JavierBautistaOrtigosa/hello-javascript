@@ -8,9 +8,9 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14229
 // Sintaxis
 
 let person = {
-    name: "Brais",
-    age: 37,
-    alias: "MoureDev"
+      name: "Brais",
+      age: 37,
+      alias: "MoureDev",
 }
 
 // Acceso a propiedades
@@ -47,31 +47,33 @@ console.log(person)
 // Métodos (funciones)
 
 let person2 = {
-    name: "Brais",
-    age: 37,
-    alias: "MoureDev",
-    walk: function () {
-        console.log("La persona camina.")
-    }
+      name: "Brais",
+      age: 37,
+      alias: "MoureDev",
+      walk: function () {
+            console.log("La persona camina.")
+      },
 }
 person2.walk()
 
 // Anidación de objetos
 
 let person3 = {
-    name: "Brais",
-    age: 37,
-    alias: "MoureDev",
-    walk: function () {
-        console.log("La persona camina.")
-    },
-    job: {
-        name: "Programador",
-        exp: 15,
-        work: function () {
-            console.log(`La persona de ${this.age} años de experiencia trabaja.`)
-        }
-    }
+      name: "Brais",
+      age: 37,
+      alias: "MoureDev",
+      walk: function () {
+            console.log("La persona camina.")
+      },
+      job: {
+            name: "Programador",
+            exp: 15,
+            work: function () {
+                  console.log(
+                        `La persona de ${this.age} años de experiencia trabaja.`,
+                  )
+            },
+      },
 }
 
 console.log(person3)
@@ -84,10 +86,10 @@ person3.job.work()
 // Igualdad de objetos
 
 let person4 = {
-    name: "Brais Moure",
-    alias: "MoureDev",
-    email: "braismoure@mouredev.com",
-    age: 37
+      name: "Brais Moure",
+      alias: "MoureDev",
+      email: "braismoure@mouredev.com",
+      age: 37,
 }
 
 console.log(person)
@@ -101,14 +103,15 @@ console.log(person.name == person4.name)
 // Iteración
 
 for (let key in person4) {
-    console.log(key + ": " + person4[key])
+      console.log(key + ": " + person4[key])
 }
 
 // Funciones como objetos
 
-function Person(name, age) { // Debería ser una clase
-    this.name = name
-    this.age = age
+function Person(name, age) {
+      // Debería ser una clase
+      this.name = name
+      this.age = age
 }
 
 let person5 = new Person("Brais", 37)
